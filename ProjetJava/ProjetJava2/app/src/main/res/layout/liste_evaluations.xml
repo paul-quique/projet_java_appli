@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:id="@+id/liste_jeux"
+    android:layout_marginBottom="5sp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nom_jeu"
+        android:layout_width="match_parent"
+        android:text="Nom du jeu"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Date: " />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:text="Aventure" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Version: " />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:text="89" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/texte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="190" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/pouce_vert"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:text="👍"
+            android:backgroundTint="@color/green"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/pouce_rouge"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:text="👎"
+            android:backgroundTint="@color/red"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+    <Button
+        android:id="@+id/supprimer_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Supprimer l'évaluation ❌"
+        android:layout_weight="1">
+    </Button>
+    <Button
+        android:id="@+id/signaler_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Signaler l'évaluation 🚨"
+        android:layout_weight="1">
+    </Button>
+</LinearLayout>

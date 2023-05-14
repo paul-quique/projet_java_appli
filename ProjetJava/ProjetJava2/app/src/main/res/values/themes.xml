@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjetJava" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/beau_bleu</item>
+        <item name="colorAccent">@color/beau_bleu</item>
+        <item name="colorButtonNormal">@color/beau_bleu
+        </item>
+    </style>
+    <style name="Theme.ProjetJava" parent="Base.Theme.ProjetJava" />
+</resources>

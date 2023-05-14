@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintWidth_percent="0.8">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:padding="0sp"
+                app:srcCompat="@drawable/logo_projet_java" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/numans"
+                    android:letterSpacing="0.15"
+                    android:text="PROJET"
+                    android:textColor="#518ECF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0sp"
+                    android:letterSpacing="0.13"
+                    android:padding="0sp"
+                    android:text="JAVA"
+                    android:textColor="#4582DD"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <Button
+                android:id="@+id/lister_joueurs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:padding="10dp"
+                android:text="Voir liste joueurs 👩‍👧‍👦"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/supprimer_compte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:text="Supprimer mon compte 🗑️❌"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/voir_jeux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Voir les jeux 🎮"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/ajouter_evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Poster une évaluation 🌟"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/ajouter_critique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Poster un test 🧪"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/jeux_a_tester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Jeux à tester triés 🔥"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/evaluations_signalees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Evaluations signalées ⚠️"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/meritants_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="20sp"
+                android:text="Qui mérite la promotion ? 🆙"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
